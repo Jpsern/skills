@@ -36,10 +36,11 @@ description: Generate conventional git commit messages with clear prefixes and c
 
 ## Body の書き方
 
-本文は必要なときだけ使います。追加の文脈を補う用途に限定し、簡潔で事実ベースにします。
+本文には変更内容の要約を必ず入れます。追加の文脈が必要な場合のみ、その補足も1, 2文で加えます。
 
 - Write the commit body in Japanese
-- Use the body only when extra context is useful
+- Include a concise summary of the change
+- Add extra context only when it is useful
 - Keep the body concise and factual
 
 ## 一貫した運用
