@@ -1,4 +1,4 @@
 interface:
   display_name: "コミットメッセージ方針"
   short_description: "conventional commit 形式で簡潔な git コミット文を作成"
-  default_prompt: "この変更に合う conventional commit の prefix を選び、件名は英語で、必要なら本文は日本語で簡潔に作成してください。"
+  default_prompt: "この変更に合う conventional commit の prefix を選び、件名は英語で、必要なら本文は日本語で簡潔に作成してください。本文の改行は実際の改行文字で出力し、\\n を文字列として出力しないでください。"
