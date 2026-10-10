@@ -42,6 +42,10 @@ description: Generate conventional git commit messages with clear prefixes and c
 - Include a concise summary of the change
 - Add extra context only when it is useful
 - Keep the body concise and factual
+- Preserve paragraph breaks with actual newline characters
+- Never output `\n` or `\\n` as a substitute for a newline
+
+本文を提示するときは、件名と本文を実際の複数行として出力します。コミットコマンドへ渡す場合も、本文中の改行をエスケープせず保持してください。たとえば、複数の `-m` 引数または改行を保持したファイルを `git commit -F` で渡します。
 
 ## 一貫した運用
 
@@ -58,4 +62,13 @@ description: Generate conventional git commit messages with clear prefixes and c
 - `feat: add list windowing to selector`
 - `docs: update selector usage`
 - `chore: add node gitignore`
+
+本文付きの出力例:
+
+```text
+feat: increase about update display contrast
+
+Aboutページの更新日表示をサイトのリンク色に合わせて高コントラスト化しました。
+表示ブロック上部の余白も1行分ほど縮小しました。
+```
 
